@@ -4,7 +4,7 @@
     * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
     */
     (function($) {
-    "use strict"; // Start of use strict
+    "use strict";// Start of use strict
   
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
