@@ -7,6 +7,7 @@ import avatar from  './assets/img/avataaars.svg'
 import InfoSection from './InfoSection'
 import FormSection from './FormSection';
 import Footer from './Footer';
+import Copywrite from './Copywrite'
 const App = () => {
     return (
         <div>
@@ -37,6 +38,7 @@ const App = () => {
                 refrenceLink = "https://courses.learncodeonline.in/"
                 refrenceLinkText = "Start Learning"
             />
+            <Copywrite webSite=" learncodeonline.in "/>
         </div>
     )
 }
