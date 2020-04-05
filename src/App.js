@@ -84,7 +84,7 @@ const App = () => {
             itemArray[itemNumber] = isCross ? "cross" : "circle";
             setIsCross(!isCross);
         } else {
-            return toast('Already filled',{type: 'error'});
+            return toast('Already filled refresh to reset game',{type: 'error'});
         }
         checkIsWinner();
     }
@@ -98,13 +98,14 @@ const App = () => {
                     {
                         winMessage ? (
                             <div className="my-2">
-                                <h1 className="text-win text-uppercase text-center">
+                                <h1 className="text-win text-uppercase text-center mb-3">
                                     {winMessage}
                                 </h1>
                                 <Button
                                     color='success'
                                     block
                                     onClick={reloadGame}
+                                    className="my-4"
                                 >
                                     Reset Game
                                 </Button>
