@@ -1,0 +1,35 @@
+.landingImage {
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/fortnite2.jpg") center center;
+}
+.landingImage h1 {
+   font-family: "Passion One", cursive;
+   font-size: 64px;
+}
+.landingImage p {
+   font-size: 20px;
+   font-family: "Russo One", sans-serif;
+}
+.btn-products {
+   text-decoration: none !important;
+   text-transform: uppercase !important;
+   letter-spacing: 1.5px;
+   padding: 15px 20px;
+   background-color: #77b900;
+   color: #fff;
+   font-family: "Passion One", cursive;
+   font-size: 24px;
+}
+.btn-products:hover {
+   opacity: 0.8;
+   color: #fff;
+}
+@media (max-width: 576px) {
+   .landingImage {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+         url("../images/fortnite.jpg") center center;
+   }
+}

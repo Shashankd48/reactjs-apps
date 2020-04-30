@@ -1,0 +1,19 @@
+body {
+   color: #ffffff;
+   background-color: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+   overflow-x: hidden;
+}
+.container-fluid {
+   padding: 0;
+}
+.nav-item .nav-link {
+   font-size: 1.32em;
+   margin: 0px 10px;
+   font-weight: 500;
+   color: #000000 !important;
+   font-family: "Kanit", sans-serif;
+   text-transform: uppercase;
+}
+.nav-item .nav-link:hover {
+   color: #77b900 !important;
+}
