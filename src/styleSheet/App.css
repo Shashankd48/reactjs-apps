@@ -28,9 +28,52 @@ body {
    color: #101010;
    font-size: 3em;
 }
+
+.aboutPage .row {
+   margin-top: 60px;
+}
+.aboutInfo {
+   padding: 30px 0px;
+   font-family: "Kanit", sans-serif;
+}
+.forniteInfo p {
+   margin-top: 20px;
+   font-size: 1.2em;
+   line-height: 30px;
+   text-align: justify;
+}
+
+.projectInfo {
+   margin-top: 50px;
+}
+.projectInfo h1 {
+   text-align: center;
+   font-family: "Passion One", cursive;
+}
+.projectInfo p {
+   font-size: 1.1em;
+   margin-bottom: 30px;
+}
+
+.projectInfo span {
+   font-size: 1.1em;
+   margin-top: 30px;
+}
+.projectInfo span a {
+   text-decoration: none;
+   font-size: 1em;
+   margin-left: 10px;
+}
+
 @media (max-width: 576px) {
    .nav-item .nav-link {
       margin-left: 25px;
+   }
+   .aboutPage .row {
+      margin-top: 10px;
+   }
+   .aboutInfo {
+      padding: 0px 10px 20px;
    }
 }
 @media (max-width: 993px) {

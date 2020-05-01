@@ -1,42 +1,47 @@
 import React from "react";
-
+import gamming from "../images/gamming.png";
+import logo from "../images/fortniteBlackLogo.png";
+import { Link } from "react-router-dom";
 export default function About() {
    let id = "abc";
    return (
-      <div>
-         <button
-            type="button"
-            className="btn btn-primary"
-            data-toggle="modal"
-            data-target={`#${id}`}
-         >
-            Launch demo modal
-         </button>
-
-         <div
-            className="modal fade"
-            id={id}
-            tabIndex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true"
-         >
-            <div className="modal-dialog modal-dialog-centered" role="document">
-               <div className="modal-content">
-                  <div className="modal-header">
-                     <h5 className="modal-title" id="exampleModalLongTitle">
-                        Modal title
-                     </h5>
-                     <button
-                        type="button"
-                        className="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                     >
-                        <span aria-hidden="true">&times;</span>
-                     </button>
+      <div className="container aboutPage">
+         <div className="row">
+            <div className="col-lg-6 col-sm-12 col-xs-12">
+               <img src={gamming} alt="" className="img-fluid" />
+            </div>
+            <div className="col-lg-6 col-sm-12 col-xs-12">
+               <div className="aboutInfo">
+                  <div className="forniteInfo">
+                     <div className="text-center">
+                        <img src={logo} alt="" style={{ width: "150px" }} />
+                        <p>
+                           Fortnite is a survival game where 100 players fight
+                           against each other in player versus player combat to
+                           be the last one standing. It is a fast-paced,
+                           action-packed game.
+                        </p>
+                     </div>
                   </div>
-                  <div className="modal-body">...</div>
+                  <div className="projectInfo">
+                     <h1>About Project</h1>
+                     <p>
+                        This project is designed for learning purpose only. We
+                        are using fornite.io api to fetch upcommig product from
+                        in fornite
+                     </p>
+                     <div className="text-center">
+                        <span>
+                           Designed By{" "}
+                           <a
+                              className="card-btn"
+                              href="https://github.com/Shashankd48/reactjs-apps/tree/fornite-api-project"
+                           >
+                              shashankd48
+                           </a>
+                        </span>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
