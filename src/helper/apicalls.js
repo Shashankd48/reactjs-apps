@@ -1,13 +1,8 @@
-require("dotenv").config({
-   path: `.env.${process.env.APIKEY}`,
-});
-const api = process.env.APIKEY;
-// Authorization: "ba382022-509d3c06-6f1d7aa9-44dc55b6",
 export const upCommingItems = () => {
    return fetch("https://fortniteapi.io/items/upcoming?lang=en", {
       method: "GET",
       headers: {
-         Authorization: `${api}`,
+         Authorization: process.env.REACT_APP_APIKEY,
       },
    })
       .then((response) => {
@@ -22,7 +17,7 @@ export const listItems = () => {
    return fetch("https://fortniteapi.io/items/list?lang=en", {
       method: "GET",
       headers: {
-         Authorization: "ba382022-509d3c06-6f1d7aa9-44dc55b6",
+         Authorization: process.env.REACT_APP_APIKEY,
       },
    })
       .then((response) => {

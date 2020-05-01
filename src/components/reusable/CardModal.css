@@ -8,8 +8,7 @@
    border-radius: 1000px;
 }
 .modal-body .info {
-   /* border: 1px solid green; */
-   padding: 0px 10px 0px 15px;
+   padding: 0px 10px 0px 20px;
 }
 .modal-body .info h1 {
    font-family: "Passion One", cursive !important;
@@ -18,11 +17,10 @@
 }
 .modal-body .info p {
    font-family: "Kanit", sans-serif !important;
-   /* font-size: 1.8em; */
 }
-.modal-body .info .card-btn {
+/* .modal-body .info .card-btn {
    bottom: 0;
-}
+} */
 @media (max-width: 576px) {
    .modal {
       width: 330px;

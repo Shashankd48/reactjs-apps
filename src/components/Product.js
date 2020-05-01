@@ -10,6 +10,7 @@ export default function Product() {
          if (data.error) {
             console.log(data.error);
          } else {
+            console.log(data);
             setItems(data.items);
          }
       });

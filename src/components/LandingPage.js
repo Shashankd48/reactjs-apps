@@ -1,6 +1,7 @@
 import React from "react";
 import "../styleSheet/LandingPage.css";
 import { Link } from "react-router-dom";
+
 export default function LandingPage() {
    return (
       <div className="landingImage text-white">

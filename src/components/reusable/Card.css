@@ -42,11 +42,11 @@
    font-size: 2em;
    padding: 0px;
    margin: 0;
-   margin-top: 5px;
+   margin-top: 6px;
 }
 .card-body .card-text {
    font-family: "Kanit", sans-serif;
    min-height: 50px;
    margin: 0;
-   margin-bottom: 3px;
+   margin-bottom: 2px;
 }
