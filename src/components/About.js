@@ -1,9 +1,7 @@
 import React from "react";
 import gamming from "../images/gamming.png";
 import logo from "../images/fortniteBlackLogo.png";
-import { Link } from "react-router-dom";
 export default function About() {
-   let id = "abc";
    return (
       <div className="container aboutPage">
          <div className="row">
