@@ -23,8 +23,16 @@
 .modal-body .info .card-btn {
    bottom: 0;
 }
-/* @media (max-width: 576px) {
+@media (max-width: 576px) {
    .modal {
-      width: 350px !important;
+      width: 330px;
+      position: fixed;
+      margin: 0 auto !important;
+      max-width: unset !important;
+      right: 0;
    }
-} */
+   .modal-dialog {
+      margin: 0 auto !important;
+      text-align: center;
+   }
+}
