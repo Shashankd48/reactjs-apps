@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { upCommingItems, getItemsFromShop } from "../helper/apicalls";
+import { Link } from "react-router-dom";
+import Card from "./reusable/Card";
 
 export default function Product() {
    const [items, setItems] = useState([]);
@@ -40,24 +42,11 @@ export default function Product() {
                // waitFiveSec();
                return (
                   <div
-                     className="col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                     className="d-flex justify-content-center"
                      key={index}
-                     style={{ margin: "0", padding: "20px 3px" }}
+                     style={{ margin: "0", padding: "20px 0px" }}
                   >
-                     <div className="card text-dark" style={{ width: "15rem" }}>
-                        <img
-                           src={item.images.background}
-                           className="card-img-top"
-                           alt="..."
-                        ></img>
-                        <div className="card-body">
-                           <h5 className="card-title">{item.name}</h5>
-                           <p className="card-text">{item.description}</p>
-                           <a href="#" className="btn btn-primary">
-                              Go somewhere
-                           </a>
-                        </div>
-                     </div>
+                     <Card item={item} />
                   </div>
                );
             })}

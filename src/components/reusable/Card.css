@@ -1,0 +1,29 @@
+.card {
+   border: none;
+   width: 18rem;
+   margin: 0px 25px;
+}
+.card-body {
+   padding: 7px 5px;
+}
+.card-btn {
+   text-decoration: none !important;
+   text-transform: uppercase !important;
+   letter-spacing: 1.5px;
+   padding: 10px 15px;
+   background-color: #77b900;
+   color: #fff;
+   font-family: "Passion One", cursive;
+   font-size: 18px;
+}
+.card-btn:hover {
+   opacity: 0.8;
+   color: #fff;
+}
+.card-body .card-title {
+   font-family: "Passion One", cursive !important;
+   font-size: 2em;
+}
+.card-body .card-text {
+   font-family: "Kanit", sans-serif;
+}
