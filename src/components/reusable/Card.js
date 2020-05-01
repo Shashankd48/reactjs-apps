@@ -1,7 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Card.css";
+import CardModal from "./CardModal";
+
 export default function Card({ item }) {
+   console.log(item);
    return (
       <div className="card text-dark">
          <img
@@ -12,9 +14,22 @@ export default function Card({ item }) {
          <div className="card-body">
             <h5 className="card-title">{item.name}</h5>
             <p className="card-text">{item.description}</p>
-            <Link to="/product/${item}" className="card-btn">
+            <button
+               type="button"
+               className="card-btn"
+               data-toggle="modal"
+               data-target={`#${item.id}`}
+            >
                Know More
-            </Link>
+            </button>
+            <CardModal
+               id={item.id}
+               name={item.name}
+               description={item.description}
+               rarity={item.rarity}
+               icon={item.images.icon}
+               full={item.images.background}
+            />
          </div>
       </div>
    );

@@ -13,14 +13,16 @@
    padding: 0px 15px;
 }
 .card-btn {
-   text-decoration: none !important;
+   /* text-decoration: none !important; */
+   border: none;
    text-transform: uppercase !important;
    letter-spacing: 1.5px;
-   padding: 10px 15px;
+   padding: 8px 15px;
    background-color: #77b900;
    color: #fff;
    font-family: "Passion One", cursive;
    font-size: 18px;
+   outline: none;
 }
 .card-btn:hover {
    color: #181818;
@@ -30,6 +32,10 @@
    -moz-transition: all 0.9s ease-out;
    -o-transition: all 0.9s ease-out;
    transition: all 0.9s ease-out;
+}
+.card-btn:active,
+.card-btn:focus {
+   outline: none;
 }
 .card-body .card-title {
    font-family: "Passion One", cursive !important;
@@ -42,5 +48,5 @@
    font-family: "Kanit", sans-serif;
    min-height: 50px;
    margin: 0;
-   margin-bottom: 10px;
+   margin-bottom: 3px;
 }

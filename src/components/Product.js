@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { upCommingItems, getItemsFromShop } from "../helper/apicalls";
-import { Link } from "react-router-dom";
+import { upCommingItems } from "../helper/apicalls";
 import Card from "./reusable/Card";
 
 export default function Product() {
@@ -14,26 +13,10 @@ export default function Product() {
             setItems(data.items);
          }
       });
-      getItemsFromShop().then((data) => {
-         if (data.error) {
-            console.log(data.error);
-         } else {
-            console.log(data);
-         }
-      });
    };
    useEffect(() => {
       preload();
    }, []);
-
-   const waitFiveSec = () => {
-      setTimeout(() => {}, 5000);
-   };
-   const showInfo = () => {
-      console.log(items);
-      console.log(items[0]);
-   };
-   showInfo();
    return (
       <div className="container pb-5 products" style={{ height: "100%" }}>
          <h1 className="heading text-center mt-4">
@@ -41,7 +24,6 @@ export default function Product() {
          </h1>
          <div className="row  justify-content-center align-items-center">
             {items.slice(0, 9).map((item, index) => {
-               // waitFiveSec();
                return (
                   <div
                      className="d-flex justify-content-left"

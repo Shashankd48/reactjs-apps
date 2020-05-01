@@ -6,7 +6,6 @@ import About from "./About";
 import Product from "./Product";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 
-// <Route path="/" exact component={Home} />
 export default function App() {
    return (
       <Router>
@@ -15,7 +14,7 @@ export default function App() {
             <Switch>
                <Route path="/" exact component={Home} />
                <Route path="/about" component={About} />
-               <Route path="/products" component={Product} />
+               <Route path="/products" exact component={Product} />
             </Switch>
          </div>
       </Router>

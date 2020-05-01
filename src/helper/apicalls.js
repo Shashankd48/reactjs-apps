@@ -11,8 +11,10 @@ export const upCommingItems = () => {
       .catch((err) => console.log(err));
 };
 
-export const getItemsFromShop = () => {
-   return fetch("https://fortniteapi.io/shop?lang=en", {
+export const getItemById = (itemId) => {};
+
+export const listItems = () => {
+   return fetch("https://fortniteapi.io/items/list?lang=en", {
       method: "GET",
       headers: {
          Authorization: "ba382022-509d3c06-6f1d7aa9-44dc55b6",
