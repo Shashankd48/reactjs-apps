@@ -35,8 +35,10 @@ export default function Product() {
    };
    showInfo();
    return (
-      <div className="container pb-5" style={{ height: "100%" }}>
-         <h1 className="text-white text-center">Hello</h1>
+      <div className="container pb-5 products" style={{ height: "100%" }}>
+         <h1 className="heading text-center mt-4">
+            Amazing Upcomming <span style={{ color: "#77b900" }}>Products</span>
+         </h1>
          <div className="row  justify-content-center align-items-center">
             {items.slice(0, 9).map((item, index) => {
                // waitFiveSec();

@@ -21,3 +21,10 @@ body {
    -o-transition: all 0.5s ease-out;
    transition: all 0.5s ease-out;
 }
+
+.products .heading {
+   text-transform: uppercase;
+   font-family: "Passion One", cursive;
+   color: #101010;
+   font-size: 3em;
+}
