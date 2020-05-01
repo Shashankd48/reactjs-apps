@@ -35,16 +35,16 @@ export default function Product() {
    };
    showInfo();
    return (
-      <div className="container" style={{ height: "100%" }}>
+      <div className="container pb-5" style={{ height: "100%" }}>
          <h1 className="text-white text-center">Hello</h1>
          <div className="row  justify-content-center align-items-center">
-            {items.slice(0, 8).map((item, index) => {
+            {items.slice(0, 9).map((item, index) => {
                // waitFiveSec();
                return (
                   <div
-                     className="d-flex justify-content-center"
+                     className="d-flex justify-content-left"
                      key={index}
-                     style={{ margin: "0", padding: "20px 0px" }}
+                     style={{ margin: "0", padding: "40px 0px" }}
                   >
                      <Card item={item} />
                   </div>

@@ -24,8 +24,13 @@
    font-size: 24px;
 }
 .btn-products:hover {
-   opacity: 0.8;
-   color: #fff;
+   color: #181818;
+   background: -webkit-linear-gradient(to right, #ffff00, #77b900);
+   background: linear-gradient(to right, #ffff00, #77b900);
+   -webkit-transition: all 0.9s ease-out;
+   -moz-transition: all 0.9s ease-out;
+   -o-transition: all 0.9s ease-out;
+   transition: all 0.9s ease-out;
 }
 @media (max-width: 576px) {
    .landingImage {
