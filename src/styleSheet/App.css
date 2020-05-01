@@ -28,3 +28,13 @@ body {
    color: #101010;
    font-size: 3em;
 }
+@media (max-width: 576px) {
+   .nav-item .nav-link {
+      margin-left: 25px;
+   }
+}
+@media (max-width: 993px) {
+   .nav-item .nav-link {
+      margin-left: 30px;
+   }
+}
