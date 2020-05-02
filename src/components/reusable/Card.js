@@ -3,7 +3,6 @@ import "./Card.css";
 import CardModal from "./CardModal";
 
 export default function Card({ item }) {
-   console.log(item);
    return (
       <div className="card text-dark">
          <img

@@ -25,8 +25,8 @@ export default function About() {
                      <h1>About Project</h1>
                      <p>
                         This project is designed for learning purpose only. We
-                        are using fornite.io api to fetch upcommig product from
-                        in fornite
+                        are using fornite.io api to fetch upcoming product
+                        fornite.
                      </p>
                      <div className="text-center">
                         <span>

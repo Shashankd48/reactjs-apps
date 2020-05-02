@@ -9,9 +9,9 @@ To get fornite api you need api key. Register to fornite.io then you will get an
 
 ## 2. Create a .env file
 
-## 3. REACT_APP_APIKEY='Paste your api key'
+ REACT_APP_APIKEY=your_api_key
 
-## 4. That's it just restart your react development server.
+## 3. That's it just restart your react development server.
 
 
 
