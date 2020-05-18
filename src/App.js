@@ -32,7 +32,7 @@ export default function App() {
    };
    return (
       <Container fluid>
-         <div className="appName my-4 p-4 text-center">
+         <div className="appName my-4 p-3 text-center">
             <FaTasks className="icon" />
             <span className="title">Todo App</span>
          </div>
