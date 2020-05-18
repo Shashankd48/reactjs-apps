@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
+
+*,
+*::after,
+*::before {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Raleway", sans-serif;
+   /* font-family: "Roboto", sans-serif; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+   background-color: #00a79d;
+   padding-bottom: 40px;
+   overflow-x: hidden;
+}
+.appName {
+   margin: 0 auto;
+   width: min(630px, 90vw);
+   box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.5);
+   border: 1px solid #343a40;
+   animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+   animation-duration: 2s; /* don't forget to set a duration! */
+}
+.appName .title {
+   font-size: 2rem;
+   color: #fff;
+   font-weight: 600 !important;
+}
+.appName .icon {
+   position: relative;
+   font-size: 2.4rem;
+   top: -7px;
+   color: #fff;
+   margin-right: 20px;
+}
+form {
+   border-radius: 8px;
+   color: #000;
+   box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.input-group {
+   padding: 20px;
+}
+.items {
+   border-radius: 8px;
+   overflow-y: auto !important;
+}
+.form-group {
+   margin-bottom: 0;
+}
+.completedTodo {
+   background-color: darkgray;
+   text-decoration: line-through;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.animForm {
+   animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+   animation-duration: 2s; /* don't forget to set a duration! */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.animTodo {
+   animation: fadeIn;
+   animation-duration: 1000ms;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.animTodoList {
+   animation: fadeInUp;
+   /* animation-delay: 2s; */
+   animation-duration: 3000ms;
 }
