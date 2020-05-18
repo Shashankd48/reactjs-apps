@@ -39,7 +39,7 @@ export default function TodoForm() {
       setTodoString("");
    };
    return (
-      <div className="col-lg-6 col-md-8 col-sm-12 offset-lg-3 offset-sm-0 offset-md-2">
+      <div className="col-lg-6 col-md-8 col-sm-12 offset-lg-3 offset-sm-0 offset-md-2 animForm">
          <Form onSubmit={handleSubmit}>
             <FormGroup>
                <InputGroup>

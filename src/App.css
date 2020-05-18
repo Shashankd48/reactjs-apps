@@ -13,12 +13,15 @@
 body {
    background-color: #00a79d;
    padding-bottom: 40px;
+   overflow-x: hidden;
 }
 .appName {
    margin: 0 auto;
    width: min(630px, 90vw);
    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.5);
    border: 1px solid #343a40;
+   animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+   animation-duration: 2s; /* don't forget to set a duration! */
 }
 .appName .title {
    font-size: 2rem;
@@ -43,4 +46,18 @@ form {
 .completedTodo {
    background-color: darkgray;
    text-decoration: line-through;
+}
+
+.animForm {
+   animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+   animation-duration: 2s; /* don't forget to set a duration! */
+}
+.animTodo {
+   animation: fadeIn;
+   animation-duration: 1000ms;
+}
+.animTodoDelete {
+   animation: fadeOut;
+   animation-delay: 2s;
+   animation-duration: 2000ms;
 }
