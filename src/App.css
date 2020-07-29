@@ -158,7 +158,8 @@ section {
    background-color: #f0f0f0;
    color: #fc5185;
 }
-.card .btn:hover {
+.card .btn:hover,
+.card .btn:active {
    color: #ffffff;
    background-color: #fc5185;
    transition: all 0.3s ease-in-out;
@@ -186,6 +187,15 @@ section {
    align-items: center;
    background-color: #364f6b;
    color: #ffffff;
+}
+.footer a {
+   color: #fc5185;
+   text-decoration: none;
+   transition: all 0.3s ease-in-out;
+}
+.footer a:hover {
+   color: #ffffff;
+   text-decoration: none;
 }
 @media screen and (max-width: 768px) {
    .nav-item {
