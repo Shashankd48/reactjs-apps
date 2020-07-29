@@ -47,8 +47,7 @@ export default function Courses() {
                   para="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque in obcaecati vitae consequuntur maxime illum molestiae, error numquam aspernatur blanditiis!"
                />
             </div>
-         </div>
-         <div className="row">
+
             <div className="col-lg-3 col-md-4 col-sm-6 col-xs-1 p-1">
                <CourseCard
                   icon={art}

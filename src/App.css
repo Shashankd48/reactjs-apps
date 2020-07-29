@@ -86,7 +86,9 @@ section {
 /* Courses */
 .courses p,
 .teachers p,
-.about p {
+.about p,
+.blog p,
+.contact p {
    max-width: 600px;
    margin: 0 auto;
    font-size: 14px;
@@ -197,12 +199,60 @@ section {
    color: #ffffff;
    text-decoration: none;
 }
+
+.blogs {
+   margin-top: 100px;
+}
+.blogCard {
+   border-radius: 12px;
+   display: flex;
+   margin-top: 50px;
+}
+.blogCard h5 {
+   font-size: 1.2rem;
+}
+.blogCard p {
+   font-size: 14px;
+}
+.blogCard img {
+   max-height: 400px;
+   border-radius: 12px;
+}
+.blogCard:hover {
+   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+   transition: all 0.3s ease-in-out;
+}
+.blogText {
+   padding: 20px;
+}
+.blogText .btn {
+   font-size: 8px !important;
+   padding: 12px 18px;
+}
 @media screen and (max-width: 768px) {
    .nav-item {
       padding-left: 30px;
    }
    .about img {
-      max-width: 380px;
+      max-width: 350px;
       margin: 0 auto;
+   }
+}
+
+@media screen and (max-width: 968px) {
+   .about img {
+      max-width: 350px;
+      margin: 0 auto;
+   }
+}
+@media screen and (max-width: 568px) {
+   .about {
+      text-align: center;
+   }
+   .blogText {
+      padding: 14px;
+   }
+   .blogCard img {
+      max-height: 550px;
    }
 }
