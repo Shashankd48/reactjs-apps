@@ -85,7 +85,8 @@ section {
 
 /* Courses */
 .courses p,
-.teachers p {
+.teachers p,
+.about p {
    max-width: 600px;
    margin: 0 auto;
    font-size: 14px;
@@ -146,6 +147,8 @@ section {
 
 .card {
    border-radius: 15px;
+   border: none !important;
+   margin: 0 auto;
 }
 .car img {
    border-radius: 25px !important;
@@ -164,8 +167,23 @@ section {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
    transition: all 0.4s ease-in-out;
 }
+
+.about img {
+   max-width: 450px;
+   margin: 0 auto;
+}
+.aboutText {
+   padding: 20px;
+}
+.aboutText p {
+   font-size: 14px;
+}
 @media screen and (max-width: 768px) {
    .nav-item {
       padding-left: 30px;
+   }
+   .about img {
+      max-width: 380px;
+      margin: 0 auto;
    }
 }

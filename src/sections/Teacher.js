@@ -5,7 +5,7 @@ import t2 from "../assets/t2.jpg";
 import t3 from "../assets/t3.jpg";
 export default function Teacher() {
    return (
-      <section id="teachers" className="teachers py-5 container">
+      <section id="teachers" className="teachers py-2 container">
          <h3 className="text-center mt-5">Our Teachers</h3>
          <p className="text-center my-3">
             Dignissimos asperiores vitae velit veniam totam fuga molestias

@@ -28,7 +28,7 @@ export default function Nav() {
             >
                <ul className="navbar-nav ml-auto">
                   <li className="nav-item active">
-                     <a className="nav-link" href="/">
+                     <a className="nav-link" href="#home">
                         Home <span className="sr-only">(current)</span>
                      </a>
                   </li>
