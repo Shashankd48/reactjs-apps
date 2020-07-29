@@ -7,6 +7,7 @@ import Teacher from "./sections/Teacher";
 import About from "./sections/About";
 import Footer from "./sections/Footer";
 import Blog from "./sections/Blog";
+import Contact from "./sections/Contact";
 
 export default function App() {
    return (
@@ -17,6 +18,7 @@ export default function App() {
          <Teacher />
          <About />
          <Blog />
+         <Contact />
          <Footer />
       </div>
    );
