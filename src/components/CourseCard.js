@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function CourseCard({ icon, heading, para }) {
-   const abc = '<i className="fas fa-store"></i>';
    return (
       <div className="cardCourse">
          <span className="icon">
