@@ -178,6 +178,15 @@ section {
 .aboutText p {
    font-size: 14px;
 }
+.footer {
+   margin-top: 20px;
+   height: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #364f6b;
+   color: #ffffff;
+}
 @media screen and (max-width: 768px) {
    .nav-item {
       padding-left: 30px;

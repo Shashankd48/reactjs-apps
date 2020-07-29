@@ -32,6 +32,11 @@ export default function About() {
                   consectetur perferendis illum ullam sint? Ab, aliquid
                   delectus?
                </p>
+               <br />
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia voluptatibus, nostrum reiciendis laudantium a hic.
+               </p>
             </div>
          </div>
       </section>

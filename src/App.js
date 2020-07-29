@@ -5,7 +5,7 @@ import Home from "./sections/Home";
 import Courses from "./sections/Courses";
 import Teacher from "./sections/Teacher";
 import About from "./sections/About";
-
+import Footer from "./sections/Footer";
 export default function App() {
    return (
       <div>
@@ -14,6 +14,7 @@ export default function App() {
          <Courses />
          <Teacher />
          <About />
+         <Footer />
       </div>
    );
 }
