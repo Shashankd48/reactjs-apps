@@ -9,14 +9,81 @@ body {
    background: #f0f0f0;
    font-family: "Varela Round", sans-serif;
 }
+.navbar-brand {
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   padding: 0;
+   margin: 0;
+}
 nav {
    position: sticky !important;
    top: 0;
-   height: 11vh;
+   min-height: 11vh;
    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+   z-index: 100;
+}
+.nav-item {
+   margin: 0 10px;
+   transition: 0.3s ease-in-out;
+   border-radius: 2px;
+}
+.nav-item .nav-link {
+   color: #000000 !important;
+   transition: all 0.3s ease-in;
+}
+.nav-item:hover {
+   background: #fc5185;
+}
+.nav-item:hover .nav-link {
+   color: #ffffff !important;
 }
 
 section {
-   min-height: 80vh;
+   /* min-height: 80vh; */
    font-family: "Montserrat", sans-serif;
+}
+
+/* .home {
+   height: 50vh;
+   overflow: hidden;
+} */
+.carousel-caption {
+   /* margin-bottom: 100px; */
+   position: absolute;
+   top: 45%;
+}
+.carousel-caption h5 {
+   font-size: 1.8rem;
+   max-width: 700px;
+   margin: 0 auto;
+}
+.carousel-caption p {
+   font-size: 1.1rem;
+   margin-top: 20px;
+}
+.carousel-item img {
+   filter: brightness(60%);
+}
+.btn-primary {
+   margin-top: 15px;
+   border: none;
+   border-radius: 100px;
+   font-size: 11px;
+   letter-spacing: 2px;
+   padding: 12px 24px;
+   text-transform: uppercase;
+}
+
+/* Courses */
+.courses p {
+   max-width: 600px;
+   margin: 0 auto;
+   font-size: 14px;
+   line-height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+   .nav-item {
+      padding-left: 30px;
+   }
 }

@@ -1,12 +1,15 @@
 import React from "react";
-
+import logo from "../assets/logo.png";
 export default function Nav() {
    return (
-      <nav className="navbar navbar-expand-md navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
          <div className="container">
-            <a className="navbar-brand" href="/">
-               Navbar
-            </a>
+            <div className="navbar-brand">
+               <img src={logo} alt="Main Logo" width="90px" />
+               <a className="navbar-brand" href="#home">
+                  Education
+               </a>
+            </div>
             <button
                className="navbar-toggler"
                type="button"
