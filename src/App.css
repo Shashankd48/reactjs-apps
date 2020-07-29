@@ -2,6 +2,15 @@
 html {
    scroll-behavior: smooth;
 }
+h1,
+h2,
+h4,
+h3,
+h5,
+h6 {
+   color: #364f6b;
+}
+
 body {
    margin: 0;
    padding: 0;
@@ -48,7 +57,6 @@ section {
    overflow: hidden;
 } */
 .carousel-caption {
-   /* margin-bottom: 100px; */
    position: absolute;
    top: 45%;
 }
@@ -56,6 +64,7 @@ section {
    font-size: 1.8rem;
    max-width: 700px;
    margin: 0 auto;
+   color: #43dde6;
 }
 .carousel-caption p {
    font-size: 1.1rem;
@@ -75,13 +84,86 @@ section {
 }
 
 /* Courses */
-.courses p {
+.courses p,
+.teachers p {
    max-width: 600px;
    margin: 0 auto;
    font-size: 14px;
    line-height: 25px;
 }
+.Cards {
+   display: flex;
+   justify-content: space-between;
+}
+.cardCourse {
+   min-height: 300px;
+   max-width: 300px;
+   margin: 0 auto;
+   margin-top: 40px;
+   border-radius: 10px;
+   padding: 30px 15px;
+}
+.cardCourse,
+.desc {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.desc h3 {
+   margin-top: 25px;
+   font-size: 1.1rem;
+   text-align: center;
+   min-height: 40px;
+   padding: 0;
+}
+.desc p {
+   text-align: left;
+   margin-top: 5px;
+}
+.cardCourse .icon {
+   font-size: 36px;
+   background-color: #d6d6d6;
+   height: 80px;
+   width: 80px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.3s ease-in-out;
+}
+.cardCourse .icon img {
+   width: 40px;
+}
+.cardCourse:hover .icon {
+   background-color: #fc5185;
+   color: #ffffff;
+   transition: all 0.3s ease-in-out;
+}
+.cardCourse:hover {
+   transition: all 0.3s ease-in-out;
+   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+}
 
+.card {
+   border-radius: 15px;
+}
+.car img {
+   border-radius: 25px !important;
+}
+.card .btn {
+   font-size: 10px !important;
+   background-color: #f0f0f0;
+   color: #fc5185;
+}
+.card .btn:hover {
+   color: #ffffff;
+   background-color: #fc5185;
+   transition: all 0.3s ease-in-out;
+}
+.card:hover {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   transition: all 0.4s ease-in-out;
+}
 @media screen and (max-width: 768px) {
    .nav-item {
       padding-left: 30px;

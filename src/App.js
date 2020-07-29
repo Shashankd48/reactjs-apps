@@ -3,6 +3,7 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./sections/Home";
 import Courses from "./sections/Courses";
+import Teacher from "./sections/Teacher";
 
 export default function App() {
    return (
@@ -10,6 +11,7 @@ export default function App() {
          <Nav />
          <Home />
          <Courses />
+         <Teacher />
       </div>
    );
 }
